@@ -145,25 +145,25 @@ export default function LaborFeeCalculator() {
             Result
           </Typography>
           <Typography>
-            Start Date: {new Date(result.startDate).toLocaleDateString()}
+            Start Date: {new Date(result.data.startDate).toLocaleDateString()}
           </Typography>
           <Typography>
-            End Date: {new Date(result.endDate).toLocaleDateString()}
+            End Date: {new Date(result.data.endDate).toLocaleDateString()}
           </Typography>
           <Typography>
-            Per Hour Charge: {result.perHourCharge}
+            Per Hour Charge: {result.data.perHourCharge}
           </Typography>
           <Typography>
-            Over Time Charge: {result.overTimeCharge}
+            Over Time Charge: {result.data.overTimeCharge}
           </Typography>
           <Typography fontSize="14px">
-            Total hours Worked: {result.totalNormalHours} hrs
+            Total hours Worked: {result.data.totalNormalHours} hrs
           </Typography>
           <Typography fontSize="14px">
-            Overtime hours Worked: {result.totalOvertimeHours} hrs
+            Overtime hours Worked: {result.data.totalOvertimeHours} hrs
           </Typography>
           <Typography fontWeight="bold" fontSize="15px">
-            Total Pay: ${result.totalPay}
+            Total Pay: ${result.data.totalPay}
           </Typography>
         </Box>
       )}
